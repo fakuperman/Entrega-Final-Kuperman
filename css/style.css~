@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*HEADER*/
+main {
+  background-color: burlywood;
+}
+
+ul li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+section {
+  display: flex;
+}
+
+.mainMenu {
+  list-style-type: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+.parrafo {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .gridContenedor {
+    grid-template-areas: "encabezado encabezado" "main main" "img img" "footer footer";
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .gridContenedor {
+    grid-template-areas: "encabezado encabezado encabezado encabezado" "main main main main" "img img img img" "footer footer footer footer";
+  }
+}
+/*-------------  tamaño de carrusel----------*/
+.carousel-item {
+  height: 600px;
+  width: 200px;
+}
+
+.alineacion-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "video texto-1" "texto-2 imagen";
+}
+
+.video {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video iframe {
+  width: 450px;
+  height: 400px;
+}
+
+.texto-1 {
+  grid-area: texto-1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagen-beneficio {
+  grid-area: imagen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagen-beneficio img {
+  width: 450px;
+  height: 400px;
+}
+
+.texto-2 {
+  grid-area: texto-2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedorProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorProductos:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.contenedorProductos .imagenProducto {
+  width: 100%;
+  max-height: 320px;
+  max-width: 400px;
+  height: 400px;
+  border: brown 3px solid;
+  box-shadow: 5px 5px 2px black;
+  border-radius: 15px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navegador {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.navegador .mainMenu {
+  list-style-type: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+.titulo {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+}
+.titulo:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.titulo2 {
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(123, 4, 4, 0.95);
+  grid-area: footer;
+  color: rgb(227, 215, 215);
+}
+
+@media (min-width: 500px) {
+  .navbar {
+    display: none;
+  }
+}
+.alineacion-boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.boton-productos {
+  height: 80px;
+  width: 200px;
+  border-radius: 15px;
+  border: solid 2px;
+  background-color: bisque;
+}
+
+.navbar {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css~.map */
