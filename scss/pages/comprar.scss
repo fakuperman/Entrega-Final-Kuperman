@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        } 
+    }
+
     .imagenProducto {
         width: 100%;
         max-height: 320px;
@@ -11,12 +17,7 @@
         margin-left: 30px;
         display: flex;
         align-items: center;
-        &:hover {
-            transform: scale(1.1);
-            transition: 0.5s;
-        } 
-    }
-}
+
     
 
     &:hover {

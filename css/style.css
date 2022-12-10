@@ -97,15 +97,29 @@ section {
 }
 .contenedorProductos .imagenProducto {
   width: 100%;
-  max-height: 320px;
-  max-width: 400px;
-  height: 400px;
+  max-height: 250px;
+  max-width: 200px;
+  height: 200px;
   border: brown 3px solid;
   box-shadow: 5px 5px 2px black;
   border-radius: 15px;
   margin-left: 30px;
   display: flex;
   align-items: center;
+    border: brown 3px solid;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.imagenProducto {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-height: 250px;
+  max-width: 250px;
+  height: 200px;
 }
 
 body {
